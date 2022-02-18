@@ -10,9 +10,9 @@ export function listDept(query) {
 }
 
 // 查询科室详细
-export function getPost(postId) {
+export function getDept(deptId) {
   return request({
-    url: '/hissys/dept/' + postId,
+    url: '/hissys/dept/' + deptId,
     method: 'get'
   })
 }
@@ -36,15 +36,15 @@ export function updateDept(data) {
 }
 
 // 删除科室
-export function delPost(postId) {
+export function delDept(deptId) {
   return request({
-    url: '/hissys/dept/' + postId,
+    url: '/hissys/dept/' + deptId,
     method: 'delete'
   })
 }
 
 // 导出科室
-export function exportPost(query) {
+export function exportDept(query) {
   return request({
     url: '/hissys/dept/export',
     method: 'get',
